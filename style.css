@@ -53,8 +53,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     width: 90%;
     height: 430px;
+    transition: background-image 1s ease-in-out;
     margin: 12px;
-    background-image: url(image.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body {
 
 .audio-player {
     font-weight: 700;
-    background-color: #b09595; /* Spotify green */
+    background-color: #877373; /* Spotify green */
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
@@ -179,6 +179,70 @@ body {
     border-radius: 50%;
     background: white;
     cursor: pointer;
+}
+
+.warning-box {
+    width: 300px;
+    border: 2px solid #000;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.warning-header {
+    background-color: #003366;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warning-header .close-btn {
+    cursor: pointer;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.warning-body {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.warning-body img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.warning-message {
+    font-size: 12px;
+}
+
+.warning-footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.warning-footer button {
+    background-color: #dcdcdc;
+    border: 1px solid #888;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.warning-footer button:hover {
+    background-color: #bbb;
 }
 
 .calendar {
