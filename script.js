@@ -47,3 +47,21 @@ function formatTime(seconds) {
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
+const images = [
+    'url(image.jpeg)',
+    'url(image2.jpg)',
+    'url(image3.jpg)',
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+    const slideshowDiv = document.getElementById('slideshow');
+    slideshowDiv.style.backgroundImage = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeBackground, 5000);
+
+// Initial call to set the first image
+changeBackground();
