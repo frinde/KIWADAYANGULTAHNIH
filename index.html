@@ -12,7 +12,7 @@
         <h1 class="headline">"Happy <br> Birthday!"</h1>
 
         <div class="song-div">
-            <div class="image-div">
+            <div class="image-div" id="slideshow">
                 <h1>Dini Naila...</h1>
             </div>
             
@@ -36,7 +36,23 @@
                     <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
                 </div>
             </div>
-            
+        </div>
+
+        <div class="warning-box">
+            <div class="warning-header">
+                <span>Warning.exe</span>
+                <button class="close-btn" onclick="document.querySelector('.warning-box').style.display = 'none'">X</button>
+            </div>
+            <div class="warning-body">
+                <img src="warning.png" alt="Warning Icon">
+                <div class="warning-message">
+                    <p><strong>Warning:</strong>BACA NYA HARUS DI TEMPAT SEPI!!!</p>
+                </div>
+            </div>
+            <div class="warning-footer">
+                <button onclick="document.querySelector('.warning-box').style.display = 'none'">OK</button>
+                <button onclick="document.querySelector('.warning-box').style.display = 'none'">Cancel</button>
+            </div>
         </div>
 
         <div class="calendar">
@@ -86,7 +102,7 @@
         </div>
         
         <div class="letter">
-            <h1>My fav person...</h1>
+            <h1>My <span style="font-family: 'DynaPuff', sans-serif; color: #8b7f6c;">fav</span> person...</h1>
             <p>Haloo nailaa, gak kerasa ya udah tanggal 21 oktober,</p>
             <p><br>Makasih udah mau nemenin aku sampe sekarang, Aku seneng kamu ada buat aku. Selama ini kamu udah perhatian sama aku.</p>
             <p><br>Aku tau, bulan kemaren emng berat buat dilewatin, aku juga minta maaf sampe ngebikin kamu kayak gini</p>
@@ -98,6 +114,7 @@
             <p>nanti kita nangis bareng WKWKWK. ekhem... yahsudahh atii atii yaa kalo bawa motor, atii atii kalo keluar sama mader, ndang pulang klo udah dari rumah e ell.</p>
             <p>I love you ❤</p>
         </div>
+        <a href="#" style="color: black;">huhuehuee kngenn kamu...</a>
         </div>
    </section> 
 </body>
